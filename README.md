@@ -1,2 +1,2 @@
 # FreeWhats
-FreeWhATS
+FreeWhats
