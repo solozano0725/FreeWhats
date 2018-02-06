@@ -1,2 +1,0 @@
-# FreeWhats
-FreeWhats
