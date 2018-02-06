@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "334657417751",
+    "firebase_url": "https://freewhats-7e5ab.firebaseio.com",
+    "project_id": "freewhats-7e5ab",
+    "storage_bucket": "freewhats-7e5ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334657417751:android:8116125bbfeae048",
+        "android_client_info": {
+          "package_name": "whatsapp.app.freewhats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334657417751-2hha0i1uso23mf4gl4kphbsomi2tj0sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF9DA8fKxLA8EyNRhjErkTTaQ6hEBAxTo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

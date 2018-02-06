@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="whatsapp.app.freewhats.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:configChanges="orientation|screenSize">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:fontFamily="sans-serif-smallcaps"
+        android:lineSpacingExtra="18sp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/prefijo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        app:ccpDialog_backgroundColor="@color/defaultContentColor"
+        app:ccpDialog_fastScroller_bubbleColor="@color/colorPrimary"
+        app:ccpDialog_fastScroller_bubbleTextAppearance="@style/AlertDialog.AppCompat"
+        app:ccpDialog_fastScroller_handleColor="@color/colorPrimary"
+        app:ccpDialog_searchEditTextTint="@color/colorPrimary"
+        app:ccpDialog_textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:ccp_defaultNameCode="US"/>
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/numero"
+        android:inputType="phone"
+        android:typeface="serif" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/pressed_bg"
+        android:elevation="24dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/inicio"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:targetApi="lollipop" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1206184245610579/7975655612"></com.google.android.gms.ads.AdView>
+
+</LinearLayout>
