@@ -19,20 +19,11 @@ public class About extends AppCompatActivity {
         setContentView(R.layout.activity_about);
 
         btnlink = (ImageView) findViewById(R.id.btnlinkedin);
-        btngit = (ImageView) findViewById(R.id.btngithub);
-
-
-        btngit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/solozano0725")));
-            }
-        });
 
         btnlink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/solozano0725")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/solozano0725")));
             }
         });
 
