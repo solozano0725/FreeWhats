@@ -1,73 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="whatsapp.app.freewhats.MainActivity"
+    tools:context="whatsapp.app.freewhats.ui.main.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:configChanges="orientation|screenSize">
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+    android:configChanges="orientation|screenSize"
+    android:background="@drawable/background">
 
     <TextView
-        android:id="@+id/titulo"
-        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:layout_weight="0"
+        android:background="@android:color/white"
         android:fontFamily="@font/harabara"
         android:lineSpacingExtra="18sp"
+        android:shadowDx="100"
+        android:shadowDy="100"
+        android:shadowRadius="100"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="50sp"
-        android:textStyle="bold" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/prefix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.hbb20.CountryCodePicker
-        android:id="@+id/prefijo"
+        android:id="@+id/prefix"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="32dp"
         android:layout_weight="0"
-        app:ccpDialog_backgroundColor="@color/defaultContentColor"
-        app:ccpDialog_fastScroller_bubbleColor="@color/colorPrimary"
+        app:ccp_countryPreference="AR,BR,CO,CR,CU,EC,PR,US,UY"
+        app:ccp_showFullName="true"
+        app:ccp_showPhoneCode="false"
+        app:ccp_showNameCode="true"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_textGravity="LEFT"
+        app:ccpDialog_backgroundColor="@color/colorPrimaryDark"
+        app:ccpDialog_fastScroller_bubbleColor="#FFFFFF"
+        app:ccp_textSize="20sp"
         app:ccpDialog_fastScroller_bubbleTextAppearance="@style/AlertDialog.AppCompat"
-        app:ccpDialog_fastScroller_handleColor="@color/colorPrimary"
-        app:ccpDialog_searchEditTextTint="@color/colorPrimary"
-        app:ccpDialog_textColor="@color/colorPrimary"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="0dp"
-        app:ccp_defaultNameCode="US"/>
+        app:ccpDialog_fastScroller_handleColor="#FFFFFF"
+        app:ccpDialog_searchEditTextTint="#FFFFFF"
+        app:ccpDialog_textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/numero"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="60dp"
         android:layout_weight="0"
+        android:autofillHints=""
+        android:background="@android:color/white"
         android:ems="10"
         android:fontFamily="@font/harabara"
         android:hint="@string/numero"
         android:inputType="phone"
-        android:typeface="serif" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:textColor="@android:color/white"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/btnChat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="o" />
 
     <Button
-        android:id="@+id/chat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnChat"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="108dp"
         android:layout_weight="0"
         android:background="@color/pressed_bg"
         android:elevation="24dp"
@@ -78,19 +109,26 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         tools:targetApi="lollipop" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
 
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:layout_weight="0"
-        ads:adSize="SMART_BANNER"
-        ads:adUnitId="ca-app-pub-1206184245610579/7975655612"></com.google.android.gms.ads.AdView>
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1206184245610579/7975655612"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

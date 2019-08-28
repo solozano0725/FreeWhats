@@ -4,18 +4,21 @@
     <string name="identificador">Prefijo o Código de País</string>
     <string name="numero">Número Telefónico</string>
     <string name="listadoidentificador">Listado de Códigos de Países</string>
-    <string name="inicio">Iniciar Conversación</string>
+    <string name="inicio">CHAT!</string>
     <string name="nombre" translatable="false">SL</string>
     <string name="profesion">Ingeniera de Sistemas\nDesarrolladora Android</string>
     <string name="desar">Desarrollado por:</string>
     <string name="github" translatable="false">GitHub</string>
     <string name="linkedin" translatable="false">LinkedIn</string>
     <string name="hecho">Guia</string>
-    <string name="advertencia">Debe escoger un prefijo más un número telefónico.</string>
+    <string name="adv">Debe escoger un prefijo más un número telefónico.</string>
     <string name="titulo">Pasos de uso</string>
     <string name="primer_paso">I. Seleccione el prefijo del código de país correspondiente al numero a marca.</string>
     <string name="segundo_paso">II. Ingrese el número a mandar mensajes por WhatsApp.</string>
-    <string name="tercer_paso">III. Haga clic en el botón "INICIAR CONVERSACION".</string>
+    <string name="tercer_paso">III. Haga clic en el botón "CHAT!".</string>
     <string name="cuarto_paso">¡Apoya el software libre!</string>
+    <string name="thanks_for_use">¡Gracias por usar la app!</string>
+    <string name="whatsapp_is_null">Whatsapp no esta instalado.</string>
+
 </resources>
 

@@ -4,14 +4,17 @@
     <string name="identificador">Prefix or Country Code</string>
     <string name="numero">Phone number</string>
     <string name="listadoidentificador">List of Country Codes</string>
-    <string name="inicio">Start Conversation</string>
+    <string name="inicio">CHAT!</string>
     <string name="profesion">Systems Engineer Android Developer</string>
     <string name="desar">Developed by:</string>
     <string name="hecho">Guide</string>
-    <string name="advertencia">You must choose a prefix plus a phone number.</string>
+    <string name="adv">You must choose a prefix and a phone number.</string>
     <string name="titulo">Steps of use</string>
     <string name="primer_paso">I. Select the prefix of the country code corresponding to the number to brand.</string>
     <string name="segundo_paso">II. Enter the number to send messages through WhatsApp.</string>
-    <string name="tercer_paso">III. Click on the START CONVERSATION button.</string>
+    <string name="tercer_paso">III. Click on the "CHAT!" button.</string>
     <string name="cuarto_paso">Support free software!</string>
+    <string name="thanks_for_use">¡Thanks for use the app!</string>
+    <string name="whatsapp_is_null">"Whatsapp not installed."</string>
+
 </resources>

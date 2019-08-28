@@ -1,13 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="whatsapp.app.freewhats.MainActivity">
+    tools:context="whatsapp.app.freewhats.ui.main.MainActivity">
     <item
-        android:id="@+id/guia"
-        android:enabled="true"
-        android:title="@string/hecho"
-        android:visible="true" />
-    <item
-        android:id="@+id/acerca"
+        android:id="@+id/menuAbout"
         android:enabled="true"
         android:orderInCategory="100"
         android:title="@string/acerca"
