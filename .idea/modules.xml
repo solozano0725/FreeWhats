@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FreeWhats.iml" filepath="$PROJECT_DIR$/FreeWhats.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/FreeWhats-app.iml" filepath="$PROJECT_DIR$/app/FreeWhats-app.iml" group="FreeWhats/app" />
+      <module fileurl="file://$PROJECT_DIR$/StudioProjects-FreeWhats.iml" filepath="$PROJECT_DIR$/StudioProjects-FreeWhats.iml" group="FreeWhats" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
